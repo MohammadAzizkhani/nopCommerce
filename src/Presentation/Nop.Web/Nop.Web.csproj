@@ -66,12 +66,7 @@
 
   <ItemGroup>
     <Folder Include="Themes\ShopTheme\Content\fonts\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="Themes\ShopTheme\Views\Home\Index.cshtml">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-    </Content>
+    <Folder Include="Themes\ShopTheme\Views\Product\" />
   </ItemGroup>
 
   <!-- This target execute after "Build" target.

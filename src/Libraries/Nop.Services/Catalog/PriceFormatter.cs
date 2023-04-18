@@ -69,7 +69,7 @@ namespace Nop.Services.Catalog
             {
                 if (!string.IsNullOrEmpty(targetCurrency.DisplayLocale))
                     //default behavior
-                    result = amount.ToString("C", new CultureInfo(targetCurrency.DisplayLocale));
+                    result = targetCurrency.DisplayLocale.ToLower() == "fa-ir" ? $"{amount:N} ریال" : amount.ToString("C", new CultureInfo(targetCurrency.DisplayLocale));
                 else
                 {
                     //not possible because "DisplayLocale" should be always specified
