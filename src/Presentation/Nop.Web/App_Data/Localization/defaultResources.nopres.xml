@@ -2946,6 +2946,12 @@
   <LocaleResource Name="Admin.Catalog.Products.Fields.Discounts.NoDiscounts">
     <Value>No discounts available. Create at least one discount before mapping.</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.DisplayAttributeCombinationImagesOnly">
+    <Value>Display attribute combination images only</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.Fields.DisplayAttributeCombinationImagesOnly.Hint">
+    <Value>Check to display attribute combination images only. When enabled, customers will see attribute combination images only if any.</Value>
+  </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.Fields.DisplayOrder">
     <Value>Display order</Value>
   </LocaleResource>
@@ -3678,11 +3684,11 @@
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Picture">
     <Value>Picture</Value>
   </LocaleResource>
-  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Picture.Hint">
-    <Value>Choose a picture associated to this attribute combination. This picture will replace the main product image when this product attribute combination is selected.</Value>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Pictures">
+    <Value>Pictures</Value>
   </LocaleResource>
-  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Picture.NoPicture">
-    <Value>No picture</Value>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Pictures.Hint">
+    <Value>Choose pictures associated to this attribute combination. These pictures will replace the main product image when this product attribute combination is selected.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.AttributeCombinations.Fields.Sku">
     <Value>SKU</Value>
@@ -3921,11 +3927,11 @@
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.Picture">
     <Value>Picture</Value>
   </LocaleResource>
-  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.Picture.Hint">
-    <Value>Choose a picture associated to this attribute value. This picture will replace the main product image when this product attribute value is clicked (selected).</Value>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.Pictures">
+    <Value>Pictures</Value>
   </LocaleResource>
-  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.Picture.NoPicture">
-    <Value>No picture</Value>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.Pictures.Hint">
+    <Value>Choose pictures associated to this attribute value. These pictures will replace the main product image when this product attribute value is clicked (selected).</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.Values.Fields.PriceAdjustment">
     <Value>Price adjustment</Value>
@@ -6067,7 +6073,7 @@
     <Value>Share button code</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Configuration.Settings.Catalog.PageShareCode.Hint">
-    <Value>A page share button code. By default, we're using AddThis service.</Value>
+    <Value>A page share button code. By default, we're using ShareThis service.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Configuration.Settings.Catalog.ProductReviewPossibleOnlyAfterPurchasing">
     <Value>Product review possible only after product purchasing</Value>
@@ -8478,6 +8484,9 @@
   <LocaleResource Name="Admin.Configuration.Settings.ProductEditor.Discounts">
     <Value>Discounts</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.ProductEditor.DisplayAttributeCombinationImagesOnly">
+    <Value>Display attribute combination images only</Value>
+  </LocaleResource>
   <LocaleResource Name="Admin.Configuration.Settings.ProductEditor.DisplayStockAvailability">
     <Value>Display availability</Value>
   </LocaleResource>
@@ -8660,6 +8669,9 @@
   </LocaleResource>
   <LocaleResource Name="Admin.Configuration.Settings.RewardPoints.ExchangeRate.Hint2">
     <Value>1 reward point =</Value>
+  </LocaleResource>
+  <LocaleResource Name="RewardPoints.Expired">
+    <Value>Unused reward points from {0} have expired</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Configuration.Settings.RewardPoints.MaximumRedeemedRate">
     <Value>Maximum redeemed rate</Value>
