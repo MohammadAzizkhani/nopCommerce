@@ -1,6 +1,49 @@
 
 
 /*********** CSS RESET **********/
+
+@font-face {
+  font-display: swap;
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../Themes/ShopTheme/Content/fonts/IRANYekanBold.ttf) format("truetype")
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../Themes/ShopTheme/Content/fonts/iranyekanwebmedium.2d4f96e5.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../Themes/ShopTheme/Content/fonts/iranyekanwebbold.cfb6e26c.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../Themes/ShopTheme/Content/fonts/iranyekanwebextrabold.9346e9a2.woff) format("woff");
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../Themes/ShopTheme/Content/fonts/iranyekanwebregular.e31c09af.woff2) format("woff2");
+}
+
 @font-face {
   font-family: iranyekanwebregular;
   src: url('../Themes/ShopTheme/Content/fonts/iranyekanwebregular.e31c09af.woff2');
@@ -12,7 +55,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: iranyekanwebregular;
+  font-family: IRANYekan,sans-serif;
 }
 
 *, *:before, *:after {
