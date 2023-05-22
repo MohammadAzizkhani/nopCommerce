@@ -1,7 +1,7 @@
 ﻿{
   "SystemName": "ShopTheme",
   "FriendlyName": "Shop Theme",
-  "SupportRTL": true,
+  "SupportRTL": false,
   "PreviewImageUrl": "~/Themes/ShopTheme/preview.jpg",
   "PreviewText": "The 'Shop Theme' site theme"
 }

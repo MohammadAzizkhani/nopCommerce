@@ -1241,6 +1241,17 @@ label, label + * {
   font-size: 0;
 }
 
+.contactViaWa {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('../images/wa-icon.jpg') no-repeat;
+  font-size: 0;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 17px;
+  right: 17px;
+}
 .follow-us .social .facebook a {
   background-position: 0 0;
 }
