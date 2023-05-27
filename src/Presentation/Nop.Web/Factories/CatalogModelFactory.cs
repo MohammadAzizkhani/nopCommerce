@@ -822,12 +822,23 @@ namespace Nop.Web.Factories
             var categories = allCategories.Where(c => c.ParentCategoryId == rootCategoryId).OrderBy(c => c.DisplayOrder).ToList();
             foreach (var category in categories)
             {
+                var picture = await _pictureService.GetPictureByIdAsync(category.PictureId);
+                string fullSizeImageUrl, imageUrl;
+
+                (fullSizeImageUrl, picture) = await _pictureService.GetPictureUrlAsync(picture);
+                (imageUrl, picture) = await _pictureService.GetPictureUrlAsync(picture, _mediaSettings.ProductDetailsPictureSize);
+
                 var categoryModel = new CategorySimpleModel
                 {
                     Id = category.Id,
                     Name = await _localizationService.GetLocalizedAsync(category, x => x.Name),
                     SeName = await _urlRecordService.GetSeNameAsync(category),
-                    IncludeInTopMenu = category.IncludeInTopMenu
+                    IncludeInTopMenu = category.IncludeInTopMenu,
+                    PictureModel = picture == null ? new PictureModel() : new PictureModel
+                    {
+                        FullSizeImageUrl = fullSizeImageUrl,
+                        ImageUrl = imageUrl
+                    }
                 };
 
                 //number of products in each category
