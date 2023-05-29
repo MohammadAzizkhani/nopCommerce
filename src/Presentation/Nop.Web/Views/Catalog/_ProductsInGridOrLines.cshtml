@@ -9,7 +9,7 @@
 
 @if (Model.Products.Count > 0)
 {
-    <div class="@(Model.ViewMode == "list" ? "product-list" : "product-grid")">
+    <div class="@(Model.ViewMode = "product-list" )">
         <div class="item-grid">
             @foreach (var product in Model.Products)
             {

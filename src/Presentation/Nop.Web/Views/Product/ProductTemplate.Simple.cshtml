@@ -131,7 +131,7 @@
                             dataDictAddToCart.TemplateInfo.HtmlFieldPrefix = $"addtocart_{Model.Id}";
                             @await Html.PartialAsync("_AddToCart", Model.AddToCart, dataDictAddToCart)
 
-                            @await Html.PartialAsync("_ProductEstimateShipping", Model.ProductEstimateShipping)
+                            //@await Html.PartialAsync("_ProductEstimateShipping", Model.ProductEstimateShipping)
                         }
                         <!--wishlist, compare, email a friend-->
                         <div class="overview-buttons">
@@ -141,8 +141,8 @@
                                 dataDictAddToWishlist.TemplateInfo.HtmlFieldPrefix = $"addtocart_{Model.Id}";
                                 @await Html.PartialAsync("_AddToWishlist", Model.AddToCart, dataDictAddToWishlist)
                             }
-                            @await Html.PartialAsync("_CompareProductsButton", Model)
-                            @await Html.PartialAsync("_ProductEmailAFriendButton", Model)
+                            @*@await Html.PartialAsync("_CompareProductsButton", Model)
+                            @await Html.PartialAsync("_ProductEmailAFriendButton", Model)*@
                             @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.ProductDetailsInsideOverviewButtonsAfter, additionalData = Model })
                         </div>
                         @await Html.PartialAsync("_ShareButton", Model)

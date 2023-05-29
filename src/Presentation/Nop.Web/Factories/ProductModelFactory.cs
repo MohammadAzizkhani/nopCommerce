@@ -863,7 +863,7 @@ namespace Nop.Web.Factories
             {
                 ProductId = product.Id
             };
-
+            model.Weight = product.Weight;
             if (updatecartitem != null)
             {
                 model.UpdatedShoppingCartItemId = updatecartitem.Id;
@@ -928,7 +928,7 @@ namespace Nop.Web.Factories
             model.CustomerEnteredPriceRange = string.Format(await _localizationService.GetResourceAsync("Products.EnterProductPrice.Range"),
                 await _priceFormatter.FormatPriceAsync(minimumCustomerEnteredPrice, false, false),
                 await _priceFormatter.FormatPriceAsync(maximumCustomerEnteredPrice, false, false));
-
+            
             return model;
         }
 

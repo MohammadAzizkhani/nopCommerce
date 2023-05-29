@@ -63,6 +63,12 @@
                                 };
                                 $(document).trigger({ type: "product_quantity_changed", changedData: data });
                             });
+
+                            $("#product_enteredQuantity_@Model.ProductId").on("input change", function (e) {
+                                let weight = @Model.Weight.ToString("#") * $(this).val() + 'Kg';
+                                $('#weight_@Model.ProductId').html(weight);
+                            });
+
                         });
                     </script>
                 }
@@ -86,6 +92,9 @@
                     }
                     <button type="button" id="add-to-cart-button-@Model.ProductId" class="button-1 add-to-cart-button" data-productid="@Model.ProductId" onclick="AjaxCart.addproducttocart_details('@Url.RouteUrl("AddProductToCart-Details", new {productId = Model.ProductId, shoppingCartTypeId = (int) ShoppingCartType.ShoppingCart})', '#product-details-form');return false;">@addToCartText</button>
                 }
+            </div>
+            <div clas> حدود وزن : 
+            <div id="weight_@Model.ProductId" class="post-title">@Model.Weight.ToString("#")</div>
             </div>
             if (!string.IsNullOrEmpty(Model.PreOrderAvailabilityStartDateTimeUserTime))
             {

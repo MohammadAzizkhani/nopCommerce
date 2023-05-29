@@ -39,7 +39,6 @@ namespace Nop.Web.Models.Catalog
 
         //videos
         public IList<VideoModel> VideoModels { get; set; }
-
         public string Name { get; set; }
         public string ShortDescription { get; set; }
         public string FullDescription { get; set; }
@@ -148,6 +147,7 @@ namespace Nop.Web.Models.Catalog
             }
             public int ProductId { get; set; }
 
+            public decimal Weight { get; set; }
             //qty
             [NopResourceDisplayName("Products.Qty")]
             public int EnteredQuantity { get; set; }
