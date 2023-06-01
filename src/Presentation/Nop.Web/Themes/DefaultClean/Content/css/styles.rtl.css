@@ -2459,7 +2459,7 @@ label, label + * {
 
 .overview .qty-input,
 .variant-overview .qty-input {
-  width: 45px;
+  width: 200px;
   height: 43px;
   padding: 0 12px;
   text-align: center;

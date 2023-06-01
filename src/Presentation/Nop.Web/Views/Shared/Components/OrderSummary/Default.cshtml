@@ -165,7 +165,7 @@
                                 </td>
                                 <td class="quantity">
                                     <label class="td-title" for="itemquantity@(item.Id)">@T("ShoppingCart.Quantity"):</label>
-                                    @if (Model.IsEditable)
+                                    @*@if (Model.IsEditable)
                                     {
                                         if (item.AllowedQuantities.Count > 0)
                                         {
@@ -207,9 +207,9 @@
                                         }
                                     }
                                     else
-                                    {
+                                    {*@
                                         <span class="product-quantity">@item.Quantity</span>
-                                    }
+                                    @*}*@
                                 </td>
                                 <td class="subtotal">
                                     <label class="td-title">@T("ShoppingCart.ItemTotal"):</label>
@@ -262,7 +262,7 @@
                         <button type="submit" name="updatecart" id="updatecart" class="button-2 update-cart-button" style="display: none;">@T("ShoppingCart.UpdateCart")</button>
 
                         <button type="submit" name="continueshopping" class="button-2 continue-shopping-button">@T("ShoppingCart.ContinueShopping")</button>
-                        @await Component.InvokeAsync(typeof(ShoppingCartEstimateShippingViewComponent))
+                       @* @await Component.InvokeAsync(typeof(ShoppingCartEstimateShippingViewComponent))*@
                     </div>
                 }
                 @if (Model.IsEditable)
